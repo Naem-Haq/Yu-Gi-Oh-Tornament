@@ -1,0 +1,12 @@
+{
+  "format": "July 2014 NAWCQ / April 2014 TCG",
+  "cutoff": "2014-07-08",
+  "poolSource": "https://www.hatformat.com/cardpool.html",
+  "banlistSource": "https://www.hatformat.com/banlist.html",
+  "catalogSource": "https://db.ygoprodeck.com/api/v7/cardinfo.php?misc=yes&startdate=2002-02-28&enddate=2014-07-08&dateregion=tcg",
+  "retrieved": "2026-10-31T10:49:00.342Z",
+  "cards": 6155,
+  "restrictions": 162,
+  "sha256": "bf14d3cca39583e78057f6dac47776a86540d90fbce8bbc40ff76afd25a8ad63",
+  "note": "Current card text/art is reference only; play with 2014 rulings and pre-errata effects."
+}
