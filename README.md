@@ -133,3 +133,18 @@ Tests run real PostgreSQL semantics in PGlite, with minimal Supabase Auth role/U
 
 Build output is `dist/`. No live Supabase project or GitHub deployment is created just by running these local commands.
 
+
+## Google sign-in
+
+The app includes a Google OAuth button, shown only when the live Supabase Google provider is enabled. It uses Supabase OAuth and returns to the current app path, including the GitHub Pages repository path. No Google secret belongs in frontend environment variables.
+
+For this deployment, create a Google OAuth client of type **Web application**:
+
+- Application name: Duelist Tournament
+- JavaScript origin: `https://naem-haq.github.io`
+- Authorized redirect URI: `https://dnvoctineaxjejozozia.supabase.co/auth/v1/callback`
+- Basic identity scopes only: openid, email, profile.
+
+Enter the client ID and client secret in the Supabase Google provider settings. Set the Supabase Site URL and redirect allowlist to `https://naem-haq.github.io/Yu-Gi-Oh-Tornament/`. Choose an External audience for personal Google accounts. If using Testing status, add the friends' Google addresses as test users; a shareable URL alone does not make access friends-only.
+
+The organiser invitation is consumed only after Supabase records the account email as verified. Google sign-in with the invited email can activate it. Existing email/password accounts are linked according to Supabase's verified identity linking rules; do not manually merge account IDs or expose client secrets.
